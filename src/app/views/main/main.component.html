@@ -1,0 +1,16 @@
+<div class="text mt-5">
+<p class="text-center stile">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis rerum esse ratione repellendus culpa eaque deserunt incidunt enim odio magnam labore blanditiis facere, cupiditate impedit ad consectetur quod. Pariatur, non?</p>
+</div>
+
+
+<div class="video-container d-flex justify-content-between align-items-center mt-5 flex-column flex-lg-row px-5">
+  <video class="video1" *ngIf="!secondVideo" src="../../../assets/video/MURDER.mp4" controls></video>
+  <video class="video2" *ngIf="secondVideo" src="../../../assets/video/Cruel Eyes.m4v" controls></video>
+  <div class="d-flex flex-column justify-content-between align-items-center w-lg-50 w-100 p-5">
+    <p class="text-center">I MIEI LAVORI</p>
+    <div class="d-flex justify-content-between align-items-center gap-5">
+        <button (click)="secondVideo = false" class="btn btn-dark" type="button">Video 1</button>
+        <button (click)="secondVideo = true" class="btn btn-dark" type="button">Video 2</button>
+    </div>
+  </div>
+</div>
